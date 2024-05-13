@@ -1,0 +1,16 @@
+Table modules {
+  module_id integer [pk]
+  code varchar
+  title varchar
+  year varchar
+  semester boolean ['True for semester A, False for semester B' ]
+}
+
+Table pre_requisites {
+  id integer
+  pre_req integer
+  pre_req_to integer
+}
+
+Ref: pre_requisites.pre_req > modules.module_id
+Ref: pre_requisites.pre_req_to > modules.module_id 

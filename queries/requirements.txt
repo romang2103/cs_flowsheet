@@ -1,0 +1,5 @@
+Each modules should show
+- All related modules
+- Modules that are required prerequisites
+- Modules that are related (not required prerequisites)
+- Other modules that involve the current module
